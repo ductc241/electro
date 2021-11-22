@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
  
 async function connect() {   
     try{
-        await mongoose.connect('mongodb+srv://admin:utVrYxTjMQiYjgQ8@cluster0.cmtf9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+        await mongoose.connect('mongodb://localhost:27017/Electro', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true
